@@ -11,7 +11,7 @@
 #On active VisualBasic
 Add-Type -AssemblyName Microsoft.VisualBasic
 
-[Microsoft.VisualBasic.Interaction]::MsgBox("Voici le nom du serveur $env:computername Information", "OKOnly")
+[Microsoft.VisualBasic.Interaction]::MsgBox("Voici le nom du serveur $env:computername", "Information", "Nom du PC")
 
 [string]$etendueDHCP = [Microsoft.VisualBasic.Interaction]::InputBox("Quelle sera l'adresse de sous-réseaux?")
 try {
